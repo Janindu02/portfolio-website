@@ -4,6 +4,7 @@ import { NotFound } from "./pages/NotFound";
 import { CeylonmineProject } from "./pages/CeylonmineProject";
 import { LearningPlatformProject } from "./pages/LearningPlatformProject";
 import { PlaneSeatProject } from "./pages/PlaneSeatProject";
+import { MyJourney } from "./pages/MyJourney";
 import { Toaster } from "@/components/ui/toaster";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/project/ceylonmine" element={<CeylonmineProject />} />
           <Route path="/project/learning-platform" element={<LearningPlatformProject />} />
           <Route path="/project/plane-seat" element={<PlaneSeatProject />} />
+          <Route path="/my-journey" element={<MyJourney />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
