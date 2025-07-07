@@ -1,4 +1,5 @@
 import { Briefcase, Code, User } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 export const AboutSection = () => {
   return (
@@ -44,14 +45,26 @@ export const AboutSection = () => {
 
           <div className="flex justify-center md:justify-end">
             <img
-              src="/pics/janindua.jpg"
-              alt="Janindu A. - Profile"
+              src="/pics/janindua.webp"
+              alt="Janindu Amaraweera Profile"
+              loading="lazy"
               className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-3xl shadow-xl border-4 border-primary transition-transform duration-700 ease-in-out hover:scale-105 animate-fade-in"
               style={{ animation: 'fadeInUp 1s both' }}
             />
           </div>
         </div>
       </div>
+      <Helmet>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XXXXXXXXXX');
+          `}
+        </script>
+      </Helmet>
     </section>
   );
 };

@@ -2,10 +2,17 @@ import { Navbar } from "../components/Navbar";
 import { ThemeToggle } from "../components/ThemeToggle";
 import { StarBackground } from "@/components/StarBackground";
 import { Footer } from "../components/Footer";
+import { Helmet } from 'react-helmet-async';
 
 export const MyJourney = () => {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+      <Helmet>
+        <title>My Journey | Janindu Amaraweera</title>
+        <meta name="description" content="Read the inspiring journey of Janindu Amaraweera, from a curious kid to an aspiring software engineer in Sri Lanka." />
+        <meta name="keywords" content="Janindu Amaraweera, My Journey, Software Engineer, Sri Lanka, Story, Portfolio" />
+        <link rel="canonical" href="https://yourdomain.netlify.app/my-journey" />
+      </Helmet>
       <ThemeToggle />
       <StarBackground />
       <Navbar />
