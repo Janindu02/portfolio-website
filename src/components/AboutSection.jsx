@@ -45,7 +45,7 @@ export const AboutSection = () => {
 
           <div className="flex justify-center md:justify-end">
             <img
-              src="/pics/janindua.webp"
+              src="/pics/janindua.jpg"
               alt="Janindu Amaraweera Profile"
               loading="lazy"
               className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-3xl shadow-xl border-4 border-primary transition-transform duration-700 ease-in-out hover:scale-105 animate-fade-in"
@@ -55,15 +55,21 @@ export const AboutSection = () => {
         </div>
       </div>
       <Helmet>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-XXXXXXXXXX');
-          `}
-        </script>
+        <title>Janindu Amaraweera | Software Engineer Portfolio</title>
+        <meta name="description" content="Portfolio of Janindu Amaraweera, a third-year Software Engineering undergraduate from Sri Lanka." />
+        <meta name="keywords" content="Janindu Amaraweera, Software Engineer, React Developer, Sri Lanka, Internship" />
+        <link rel="canonical" href="https://yourdomain.netlify.app/" />
+        {/* Open Graph */}
+        <meta property="og:title" content="Janindu Amaraweera | Software Engineer Portfolio" />
+        <meta property="og:description" content="Portfolio of Janindu Amaraweera, a third-year Software Engineering undergraduate from Sri Lanka." />
+        <meta property="og:image" content="https://yourdomain.netlify.app/pics/janindua.webp" />
+        <meta property="og:url" content="https://yourdomain.netlify.app/" />
+        <meta property="og:type" content="website" />
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Janindu Amaraweera | Software Engineer Portfolio" />
+        <meta name="twitter:description" content="Portfolio of Janindu Amaraweera, a third-year Software Engineering undergraduate from Sri Lanka." />
+        <meta name="twitter:image" content="https://yourdomain.netlify.app/pics/janindua.webp" />
       </Helmet>
     </section>
   );
