@@ -62,6 +62,27 @@ export const CeylonmineProject = () => {
     role: "Full-stack Developer"
   };
 
+  const ceylonmineImages = [
+    { src: "/pics/ceylonmine/image14.jpeg", caption: "Winning moment at Cutting Edge 2025 – 2nd Runners-up 🏆" },
+    { src: "/pics/ceylonmine/image3.jpg", caption: "Presenting Our Mining Solution to the Geological Survey & Mines Bureau" },
+    { src: "/pics/ceylonmine/image2.jpg", caption: "Pitching the Ceylone Mine App Concept to GSMB" },
+    { src: "/pics/ceylonmine/image8.jpg", caption: "Gaining practical insights from active mining environments" },
+    { src: "/pics/ceylonmine/image5.jpg", caption: "Receiving Feedback from GSMB Officials After Demo PresentationReceiving " },
+    { src: "/pics/ceylonmine/image6.jpg", caption: "Visiting GSMB Office with IIT Lecturers for Project Implementation Discussion" },
+    { src: "/pics/ceylonmine/image7.jpg", caption: "Exploring real-world mining operations during our field visit." },
+    { src: "/pics/ceylonmine/image4.jpg", caption: "Visitor pass for our official meeting at GSMB headquarters." },
+    { src: "/pics/ceylonmine/image9.jpg", caption: "On-site visit to a rock mining location for industry exposure" },
+    { src: "/pics/ceylonmine/image10.jpeg", caption: "Collaborative Meeting at GSMB with IIT Lecturers to Plan Ceylone Mine Implementation" },
+    { src: "/pics/ceylonmine/image11.jpeg", caption: "Team Discussion with Academic Mentors and GSMB Representatives" },
+    { src: "/pics/ceylonmine/image12.jpg", caption: "Presenting Innovative Solutions for the Mining Sector" },
+    { src: "/pics/ceylonmine/image13.jpeg", caption: "Discussion with GSMB Chairman on CeylonMine." },
+    { src: "/pics/ceylonmine/image1.jpg", caption: "Presenting CeylonMine to the GSMB Director Board" },
+    { src: "/pics/ceylonmine/image15.jpeg", caption: "Gained new insights while showcasing CeylonMine" },
+    { src: "/pics/ceylonmine/image16.jpeg", caption: "Proud moment holding our achievement!" },
+    { src: "/pics/ceylonmine/image17.jpeg", caption: "Learning and presenting at IIT Cutting Edge 2025" },
+    { src: "/pics/ceylonmine/image18.jpeg", caption: "Presenting CeylonMine at IIT Cutting Edge 2025" },
+  ];
+
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       {/* Theme Toggle */}
@@ -224,26 +245,32 @@ export const CeylonmineProject = () => {
             </div>
           </section>
 
-          {/* Project Screenshots */}
+          {/* Project Images */}
           <section>
-            <h2 className="text-3xl font-bold mb-8">Project Screenshots</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="space-y-4">
-                <h3 className="text-xl font-semibold">Dashboard Overview</h3>
-                <div className="bg-card p-4 rounded-lg">
-                  <div className="aspect-video bg-muted rounded flex items-center justify-center">
-                    <span className="text-muted-foreground">Dashboard Screenshot</span>
+            <h2 className="text-3xl font-extrabold mb-8 text-center text-primary drop-shadow-lg tracking-wide">
+              Project Images
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+              {ceylonmineImages.map((img, idx) => (
+                <div
+                  key={idx}
+                  className="relative group bg-gradient-to-br from-primary/20 to-secondary/20 p-1 rounded-3xl fade-in-up transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl flex flex-col items-center"
+                  style={{ minHeight: 320 }}
+                >
+                  <div className="overflow-hidden rounded-2xl bg-background flex items-center justify-center">
+                    <img
+                      src={img.src}
+                      alt={img.caption || `Ceylonmine Screenshot ${idx + 1}`}
+                      className="rounded-2xl border-4 border-primary/40 group-hover:border-primary transition-all duration-300 max-w-full max-h-[400px]"
+                    />
+                  </div>
+                  <div className="mt-4 w-full flex justify-center">
+                    <span className="inline-block px-4 py-2 bg-primary/10 text-primary font-semibold text-base rounded-xl shadow text-center">
+                      {img.caption}
+                    </span>
                   </div>
                 </div>
-              </div>
-              <div className="space-y-4">
-                <h3 className="text-xl font-semibold">Analytics Panel</h3>
-                <div className="bg-card p-4 rounded-lg">
-                  <div className="aspect-video bg-muted rounded flex items-center justify-center">
-                    <span className="text-muted-foreground">Analytics Screenshot</span>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </section>
         </div>
