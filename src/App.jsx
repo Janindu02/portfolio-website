@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { NotFound } from "./pages/NotFound";
-import { CeylonmineProject } from "./pages/CeylonmineProject";
+import { CeylonmineProject } from "./components/CeylonmineProject";
 import { LearningPlatformProject } from "./pages/LearningPlatformProject";
 import { PlaneSeatProject } from "./pages/PlaneSeatProject";
 import { MyJourney } from "./pages/MyJourney";

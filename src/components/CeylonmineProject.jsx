@@ -1,7 +1,7 @@
 import { ArrowLeft, ExternalLink, Github, Calendar, Users, Code, Database, Globe } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-import { ThemeToggle } from "../components/ThemeToggle";
+import { ThemeToggle } from "./ThemeToggle";
 import { StarBackground } from "@/components/StarBackground";
 
 export const CeylonmineProject = () => {
