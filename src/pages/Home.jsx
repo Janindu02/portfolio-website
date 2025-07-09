@@ -5,6 +5,8 @@ import { HeroSection } from "../components/HeroSection";
 import { AboutSection } from "../components/AboutSection";
 import { SkillsSection } from "../components/SkillsSection";
 import { ProjectsSection } from "../components/ProjectsSection";
+import { EducationSection } from "../components/EducationSection";
+import { ExtracurricularSection } from "../components/ExtracurricularSection";
 import { ContactSection } from "../components/ContactSection";
 import { Footer } from "../components/Footer";
 import { Helmet } from 'react-helmet-async';
@@ -31,6 +33,8 @@ export const Home = () => {
         <AboutSection />
         <SkillsSection />
         <ProjectsSection />
+        <EducationSection />
+        <ExtracurricularSection />
         <ContactSection />
       </main>
 
