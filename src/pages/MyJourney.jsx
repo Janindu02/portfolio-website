@@ -67,7 +67,9 @@ export const MyJourney = () => {
           </div>
         </section>
         <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-2">📺 It All Started with a YouTube Channel (2015)</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+            <span className="text-primary">📺 It All Started with a YouTube Channel (2015)</span>
+          </h2>
           <p className="mb-2">Back in Grade 7, I launched my first tech-focused YouTube channel, recording tutorials, app reviews, and tech tips from my home using just a basic mobile phone. It wasn't perfect—but it was real.</p>
           <a href="https://www.youtube.com/@janinduamaraweera" target="_blank" rel="noopener noreferrer" className="text-primary underline">👉 View My Old YouTube Videos</a>
           <div className="flex gap-4 mt-4">
@@ -76,7 +78,9 @@ export const MyJourney = () => {
           </div>
         </section>
         <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-2">🛍️ Turning Lockdown Into Opportunity – My Entrepreneurial Chapter</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+            <span className="text-primary">🛍️ Turning Lockdown Into Opportunity – My Entrepreneurial Chapter</span>
+          </h2>
           <p className="mb-2">During the COVID-19 lockdown, while many were stuck indoors, I launched my own online store and became a Daraz seller. I handled real customer orders, managed logistics, and generated income—turning theory into action and learning business the hard (and rewarding) way.</p>
           <div className="flex gap-4 mt-4">
             <div className="w-40 h-24 bg-muted rounded-lg flex items-center justify-center text-muted-foreground">Store Screenshot</div>
@@ -115,9 +119,8 @@ export const MyJourney = () => {
                   <h3 className="text-2xl font-semibold">Rahula College</h3>
                   <p className="text-lg mt-2">2014 - 2023</p>
                   <ul className="list-disc ml-5 mt-2 text-md">
-                    <li>Scored 181 marks in the Grade 5 scholarship</li>
                     <li>Earned 9 A's in O/Ls (English Medium, including ICT, 2019)</li>
-                    <li>Used A/L time to build, create, and experiment (Completed in Mathematics: Combined Maths, Physics, Chemistry, 2022)</li>
+                    <li>Completed G.C.E. Advanced Level in 2022 in the Mathematics stream (Combined Maths, Physics, Chemistry).</li>
                   </ul>
                 </div>
               </div>
@@ -141,32 +144,81 @@ export const MyJourney = () => {
           </div>
         </section>
         <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-2">📸 Creativity Is My Secret Superpower</h2>
-          <p className="mb-2">Beyond code, I express myself through photography, video editing, drawing, and creative writing. I've won awards in Sinhala writing and drawing competitions, and my visual storytelling passion shines through in UI/UX design and front-end development.</p>
-          <div className="flex gap-4 mt-4">
-            <div className="w-24 h-24 bg-muted rounded-lg flex items-center justify-center text-muted-foreground">Photo</div>
-            <div className="w-24 h-24 bg-muted rounded-lg flex items-center justify-center text-muted-foreground">Sketch</div>
-            <div className="w-24 h-24 bg-muted rounded-lg flex items-center justify-center text-muted-foreground">Award</div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+            <span className="text-primary">📸 Creativity Is My Secret Superpower</span>
+          </h2>
+          <div className="w-full max-w-6xl md:max-w-7xl mx-auto bg-card/90 rounded-3xl shadow-2xl p-0 md:p-0 overflow-hidden flex flex-col md:flex-row items-stretch">
+            {/* Photo */}
+            <div className="flex-shrink-0 flex items-center justify-center w-full md:w-[420px]">
+              <img
+                src="/pics/janinduabout.jpg"
+                alt="Janindu Amaraweera Photography"
+                className="h-full w-full max-h-[420px] md:max-h-[420px] object-cover rounded-none md:rounded-l-3xl shadow-2xl"
+                style={{ aspectRatio: '4/5' }}
+              />
+            </div>
+            {/* Text and Buttons */}
+            <div className="flex-1 flex flex-col justify-center px-8 py-10 md:py-0 md:pl-16 items-center md:items-start text-center md:text-left">
+              <p className="text-base md:text-lg mb-4 mt-10">
+                Photography and videography have been a part of my life since school—what began as a hobby has grown into a deep passion for creativity and visual storytelling. Through my brand "The Third Eye of Janindu", I capture moments that reflect emotion, detail, and perspective in unique ways.
+              </p>
+              <p className="text-base md:text-lg mb-8">
+                I actively share my creative work on platforms like Instagram, Facebook, and my own personal website. It's a space where I express my artistic side and push the boundaries of visual expression. Feel free to explore and enjoy my work through the links below:
+              </p>
+              <div className="flex flex-row flex-wrap gap-3 justify-center md:justify-start mt-6 w-full pb-6">
+                <a href="https://thirdeyeofjanindu.netlify.app/" target="_blank" rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-4 py-2 rounded-full border-2 border-primary text-primary font-bold text-base shadow-sm hover:bg-primary hover:text-white transition-all duration-300 group">
+                  <svg className="w-5 h-5 text-primary group-hover:text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/><path strokeLinecap="round" strokeLinejoin="round" d="M8 12l2 2 4-4" /></svg>
+                  Photography Website
+                </a>
+                <a href="https://www.instagram.com/third_eye_of_janindu/" target="_blank" rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-4 py-2 rounded-full border-2 border-primary text-primary font-bold text-base shadow-sm hover:bg-primary hover:text-white transition-all duration-300 group">
+                  <svg className="w-5 h-5 text-primary group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2A5.75 5.75 0 0 0 2 7.75v8.5A5.75 5.75 0 0 0 7.75 22h8.5A5.75 5.75 0 0 0 22 16.25v-8.5A5.75 5.75 0 0 0 16.25 2h-8.5zm0 1.5h8.5A4.25 4.25 0 0 1 20.5 7.75v8.5a4.25 4.25 0 0 1-4.25 4.25h-8.5A4.25 4.25 0 0 1 3.5 16.25v-8.5A4.25 4.25 0 0 1 7.75 3.5zm4.25 2.25a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5zm0 1.5a3.75 3.75 0 1 1 0 7.5 3.75 3.75 0 0 1 0-7.5zm5.25.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z" /></svg>
+                  Instagram
+                </a>
+                <a href="https://web.facebook.com/p/Janu-Janindu-photography-100076554227233/?_rdc=1&_rdr" target="_blank" rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-4 py-2 rounded-full border-2 border-primary text-primary font-bold text-base shadow-sm hover:bg-primary hover:text-white transition-all duration-300 group">
+                  <svg className="w-5 h-5 text-primary group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.325 24h11.495v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.408 24 22.674V1.326C24 .592 23.406 0 22.675 0"/></svg>
+                  Facebook
+                </a>
+              </div>
+            </div>
           </div>
         </section>
         <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-2">💡 Real-World Impact – GSMB ERP Project</h2>
-          <p className="mb-2">For our second-year university group project, we built a full-fledged ERP solution for the Geological Survey and Mines Bureau (GSMB), a major government institution in Sri Lanka.</p>
-          <ul className="list-disc ml-6 mb-2">
-            <li>✅ Online mining license applications</li>
-            <li>💰 Royalty calculation and online payment system</li>
-            <li>🧠 AI-powered chatbot</li>
-            <li>🛠 Admin dashboards with role-based access</li>
-            <li>🌐 Dedicated web portals for miners and officials</li>
-          </ul>
-          <p className="mb-2">📊 With over 8,000 license applications per year and LKR 3.79 billion in revenue in 2022, this was a project that taught us the real value of building software that matters.</p>
-          <div className="flex gap-4 mt-4">
-            <div className="w-40 h-24 bg-muted rounded-lg flex items-center justify-center text-muted-foreground">UI Screenshot</div>
-            <div className="w-40 h-24 bg-muted rounded-lg flex items-center justify-center text-muted-foreground">Dashboard</div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+            <span className="text-primary">💡 Real-World Impact – GSMB ERP Project</span>
+          </h2>
+          <div className="w-full max-w-6xl md:max-w-7xl mx-auto bg-card/90 rounded-3xl shadow-2xl p-0 md:p-0 overflow-hidden flex flex-col items-center">
+            <img
+              src="/presentation/1.png"
+              alt="GSMB ERP Project Presentation"
+              className="w-full rounded-t-3xl shadow-2xl mb-8"
+            />
+            <div className="w-full flex flex-col justify-center px-8 pb-10 items-center text-center">
+              <p className="text-base md:text-lg mb-4">
+                For our second-year university group project, we built a full-fledged ERP solution for the Geological Survey and Mines Bureau (GSMB), a major government institution in Sri Lanka.
+              </p>
+              <ul className="list-disc ml-5 mb-4 text-base md:text-lg text-left">
+                <li>✅ Online mining license applications</li>
+                <li>💰 Royalty calculation and online payment system</li>
+                <li>🧠 AI-powered chatbot</li>
+                <li>🛠 Admin dashboards with role-based access</li>
+                <li>🌐 Dedicated web portals for miners and officials</li>
+              </ul>
+              <p className="text-base md:text-lg mb-6">
+                With over 1 million license applications per year and LKR 3.79 billion in revenue in 2022, this was a project that taught us the real value of building software that matters.
+              </p>
+              <a href="/ceylonmine" className="inline-block px-6 py-2 rounded-full border-2 border-primary text-primary font-bold text-base shadow-sm hover:bg-primary hover:text-white transition-all duration-300">
+                View Full Project Details
+              </a>
+            </div>
           </div>
         </section>
         <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-2">🔁 Always Learning, Always Building</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+            <span className="text-primary">🔁 Always Learning, Always Building</span>
+          </h2>
           <p className="mb-2">Even today, I continue to write articles on Medium, explore emerging tech, and contribute to the community by sharing what I learn. I don't just consume knowledge—I create, share, and improve.</p>
           <a href="https://medium.com/@janinduamaraweera" target="_blank" rel="noopener noreferrer" className="text-primary underline">📖 Read My Articles on Medium</a>
         </section>
