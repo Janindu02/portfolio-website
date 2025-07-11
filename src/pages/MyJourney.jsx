@@ -70,21 +70,56 @@ export const MyJourney = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
             <span className="text-primary">📺 It All Started with a YouTube Channel (2015)</span>
           </h2>
-          <p className="mb-2">Back in Grade 7, I launched my first tech-focused YouTube channel, recording tutorials, app reviews, and tech tips from my home using just a basic mobile phone. It wasn't perfect—but it was real.</p>
-          <a href="https://www.youtube.com/@janinduamaraweera" target="_blank" rel="noopener noreferrer" className="text-primary underline">👉 View My Old YouTube Videos</a>
-          <div className="flex gap-4 mt-4">
-            <div className="w-40 h-24 bg-muted rounded-lg flex items-center justify-center text-muted-foreground">YouTube Thumbnail</div>
-            <div className="w-40 h-24 bg-muted rounded-lg flex items-center justify-center text-muted-foreground">YouTube Thumbnail</div>
+          <p className="mb-2 text-lg md:text-xl"> 
+            In Grade 7, armed with just a basic mobile phone and endless curiosity, I launched my first tech YouTube channel. I recorded tutorials, app reviews, and tech tips from my bedroom, no fancy gear, just passion.<br /><br />
+            That first channel sparked something in me. I went on to manage several others, constantly exploring new ideas and sharing what I learned. I wasn't chasing views, I was driven by a genuine love for technology and a desire to help others understand it.<br /><br />
+            Looking back, those early videos weren't perfect, but they were the foundation of everything I've built since.
+          </p>
+          <a href="https://www.youtube.com/@januj4430" target="_blank" rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-2 rounded-full border-2 border-primary text-primary font-bold text-base shadow-sm hover:bg-primary hover:text-white transition-all duration-300 mt-4">
+            <svg className="w-5 h-5 text-primary group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a2.994 2.994 0 0 0-2.112-2.12C19.228 3.5 12 3.5 12 3.5s-7.228 0-9.386.566a2.994 2.994 0 0 0-2.112 2.12A31.36 31.36 0 0 0 0 12a31.36 31.36 0 0 0 .502 5.814 2.994 2.994 0 0 0 2.112 2.12C4.772 20.5 12 20.5 12 20.5s7.228 0 9.386-.566a2.994 2.994 0 0 0 2.112-2.12A31.36 31.36 0 0 0 24 12a31.36 31.36 0 0 0-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            View My Old YouTube Videos
+          </a>
+        </section>
+        <section className="mb-12">
+          <div className="flex flex-col md:flex-row gap-8 mt-8 items-center justify-center">
+            <div className="bg-card/80 rounded-2xl shadow-xl p-4 px-4 flex flex-col items-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl w-full md:w-[28rem]">
+              <img
+                src="/pics/youtube1.jpeg"
+                alt="Recording my first tech tutorial video on a basic mobile phone."
+                className="w-full h-auto rounded-xl shadow-md mb-4 transition-transform duration-300"
+              />
+              <span className="text-xl md:text-2xl font-bold text-primary mb-2 text-center">Recording my first tech tutorial video on a basic mobile phone.</span>
+              <p className="text-base md:text-lg text-center mt-4">
+                Back in 2019, I grew my tech-focused YouTube channel to over 500 subscribers and gained 15,000+ views on a single video within a short time. It was more than just numbers, it reflected my ability to create content that connects, informs, and adds real value to viewers interested in tech.
+              </p>
+            </div>
+            <div className="bg-card/80 rounded-2xl shadow-xl p-4 px-4 flex flex-col items-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl w-full md:w-[28rem]">
+              <img
+                src="/pics/youtube2.jpeg"
+                alt="Editing and uploading YouTube content from my bedroom setup."
+                className="w-full h-auto rounded-xl shadow-md mb-4 transition-transform duration-300"
+              />
+              <span className="text-xl md:text-2xl font-bold text-primary mb-2 text-center">Editing and uploading YouTube content from my bedroom setup.</span>
+              <p className="text-base md:text-lg text-center mt-4">
+                I started my YouTube journey around 8–9 years ago at the age of 12, using a basic bedroom setup to share my passion for technology. I created videos teaching people about apps, software, and digital tools an experience that sparked my creativity and love for explaining tech in simple, practical ways.
+              </p>
+            </div>
           </div>
         </section>
         <section className="mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
             <span className="text-primary">🛍️ Turning Lockdown Into Opportunity – My Entrepreneurial Chapter</span>
           </h2>
-          <p className="mb-2">During the COVID-19 lockdown, while many were stuck indoors, I launched my own online store and became a Daraz seller. I handled real customer orders, managed logistics, and generated income—turning theory into action and learning business the hard (and rewarding) way.</p>
-          <div className="flex gap-4 mt-4">
-            <div className="w-40 h-24 bg-muted rounded-lg flex items-center justify-center text-muted-foreground">Store Screenshot</div>
-            <div className="w-40 h-24 bg-muted rounded-lg flex items-center justify-center text-muted-foreground">Product Listing</div>
+          <div className="flex flex-col md:flex-row items-center mb-6 gap-6">
+            <img
+              src="/pics/Daraz.jpg"
+              alt="Daraz Seller Experience"
+              className="w-40 md:w-56 rounded-2xl shadow-xl mb-4 md:mb-0"
+            />
+            <p className="text-base md:text-lg text-center md:text-left">
+              During the COVID-19 lockdown, while many were stuck indoors, I launched my own online store and became a Daraz seller. I handled real customer orders, managed logistics, and generated income turning theory into action and learning business the hard (and rewarding) way.
+            </p>
           </div>
         </section>
         {/* --- Education Section (replaces Academic Highlights) --- */}
@@ -160,7 +195,7 @@ export const MyJourney = () => {
             {/* Text and Buttons */}
             <div className="flex-1 flex flex-col justify-center px-8 py-10 md:py-0 md:pl-16 items-center md:items-start text-center md:text-left">
               <p className="text-base md:text-lg mb-4 mt-10">
-                Photography and videography have been a part of my life since school—what began as a hobby has grown into a deep passion for creativity and visual storytelling. Through my brand "The Third Eye of Janindu", I capture moments that reflect emotion, detail, and perspective in unique ways.
+                Photography and videography have been a part of my life since school, what began as a hobby has grown into a deep passion for creativity and visual storytelling. Through my brand "The Third Eye of Janindu", I capture moments that reflect emotion, detail, and perspective in unique ways.
               </p>
               <p className="text-base md:text-lg mb-8">
                 I actively share my creative work on platforms like Instagram, Facebook, and my own personal website. It's a space where I express my artistic side and push the boundaries of visual expression. Feel free to explore and enjoy my work through the links below:
@@ -209,7 +244,7 @@ export const MyJourney = () => {
               <p className="text-base md:text-lg mb-6">
                 With over 1 million license applications per year and LKR 3.79 billion in revenue in 2022, this was a project that taught us the real value of building software that matters.
               </p>
-              <a href="/ceylonmine" className="inline-block px-6 py-2 rounded-full border-2 border-primary text-primary font-bold text-base shadow-sm hover:bg-primary hover:text-white transition-all duration-300">
+              <a href="/project/ceylonmine" className="inline-block px-6 py-2 rounded-full border-2 border-primary text-primary font-bold text-base shadow-sm hover:bg-primary hover:text-white transition-all duration-300">
                 View Full Project Details
               </a>
             </div>
@@ -219,15 +254,77 @@ export const MyJourney = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
             <span className="text-primary">🔁 Always Learning, Always Building</span>
           </h2>
-          <p className="mb-2">Even today, I continue to write articles on Medium, explore emerging tech, and contribute to the community by sharing what I learn. I don't just consume knowledge—I create, share, and improve.</p>
-          <a href="https://medium.com/@janinduamaraweera" target="_blank" rel="noopener noreferrer" className="text-primary underline">📖 Read My Articles on Medium</a>
+          <div className="flex flex-col md:flex-row items-center gap-8 bg-card/80 rounded-3xl shadow-xl p-8 max-w-4xl mx-auto">
+            <div className="flex-shrink-0 flex items-center justify-center w-full md:w-48">
+              <img
+                src="/pics/medium.png"
+                alt="Medium Logo"
+                className="w-32 h-32 object-contain rounded-2xl shadow-md"
+              />
+            </div>
+            <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
+              <p className="text-base md:text-lg mb-6">
+                Even today, I continue to write articles on Medium, explore emerging tech, and contribute to the community by sharing what I learn. I don't just consume knowledge. I create, share, and improve.
+              </p>
+              <a href="https://medium.com/@janiduamaraweera" target="_blank" rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-2 rounded-full border-2 border-primary text-primary font-bold text-base shadow-sm hover:bg-primary hover:text-white transition-all duration-300 mt-2">
+                <svg className="w-5 h-5 text-primary group-hover:text-white" fill="currentColor" viewBox="0 0 1043.63 592.71"><g><path d="M588.67 296.14c0 163.61-131.93 296.14-294.33 296.14S0 459.75 0 296.14 131.93 0 294.34 0s294.33 132.53 294.33 296.14z"/><ellipse cx="775.66" cy="296.5" rx="168.49" ry="296.21"/><path d="M1043.63 296.14c0 163.61-75.45 296.14-168.49 296.14s-168.49-132.53-168.49-296.14S782.1 0 875.14 0s168.49 132.53 168.49 296.14z"/></g></svg>
+                Read My Articles on Medium
+              </a>
+            </div>
+          </div>
         </section>
         <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-2">🚀 Why This Matters</h2>
-          <p>I believe technology is not just a career—it's my playground, my canvas, and my toolkit to change lives.<br />Whether it's building solutions that scale, designing beautiful interfaces, writing meaningful content, or helping others get started—I'm here for it all.<br /><br />If you're looking for someone who's not afraid to try, fail, learn, and grow, you're in the right place.</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+            <span className="text-primary">🚀 Why This Matters</span>
+          </h2>
+          <p className="text-lg md:text-xl text-center">
+            I believe technology is not just a career. it's my playground, my canvas, and my toolkit to change lives.<br />Whether it's building solutions that scale, designing beautiful interfaces, writing meaningful content, or helping others get started, I'm here for it all.
+          </p>
+          <div className="bg-card/90 rounded-2xl shadow-xl border-2 border-primary px-8 py-8 max-w-3xl mx-auto mt-10 mb-8 flex items-center justify-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+            <p className="text-2xl md:text-3xl text-primary font-extrabold text-center drop-shadow-lg m-0">
+              If you're looking for someone who's not afraid to try, fail, learn, and grow, you're in the right place.
+            </p>
+          </div>
         </section>
         <div className="text-center text-lg mt-8 text-muted-foreground">
-          👇 Scroll down to view my full project portfolio, blog posts, and photography gallery.
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+            <span className="text-primary">👇 Scroll down to view my full project portfolio, blog posts, and photography gallery.</span>
+          </h2>
+        </div>
+        <div className="w-full max-w-4xl mx-auto bg-card/90 rounded-2xl shadow-xl border border-primary/30 p-0 md:p-0 overflow-hidden flex flex-col md:flex-row items-center mb-12">
+          <div className="flex-shrink-0 flex items-center justify-center w-full md:w-64 bg-background">
+            <img
+              src="/pics/ceylonmine/image3.jpg"
+              alt="Our First Visit to GSMB: Understanding the Challenges in Mining"
+              className="w-full h-auto rounded-l-2xl md:rounded-l-2xl md:rounded-r-none shadow-md"
+            />
+          </div>
+          <div className="flex-1 flex flex-col justify-center px-8 py-8 items-center md:items-start text-center md:text-left">
+            <h3 className="text-xl md:text-2xl font-bold mb-4">Our First Visit to GSMB: Understanding the Challenges in Mining</h3>
+            <a href="https://medium.com/@janiduamaraweera/our-first-visit-to-gsmb-understanding-the-challenges-in-mining-84f6e118b113" target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-2 rounded-full border-2 border-primary text-primary font-bold text-base shadow-sm hover:bg-primary hover:text-white transition-all duration-300 mt-2">
+              <svg className="w-5 h-5 text-primary group-hover:text-white" fill="currentColor" viewBox="0 0 1043.63 592.71"><g><path d="M588.67 296.14c0 163.61-131.93 296.14-294.33 296.14S0 459.75 0 296.14 131.93 0 294.34 0s294.33 132.53 294.33 296.14z"/><ellipse cx="775.66" cy="296.5" rx="168.49" ry="296.21"/><path d="M1043.63 296.14c0 163.61-75.45 296.14-168.49 296.14s-168.49-132.53-168.49-296.14S782.1 0 875.14 0s168.49 132.53 168.49 296.14z"/></g></svg>
+              Read Full Medium Post
+            </a>
+          </div>
+        </div>
+        <div className="w-full max-w-4xl mx-auto bg-card/90 rounded-2xl shadow-xl border border-primary/30 p-0 md:p-0 overflow-hidden flex flex-col md:flex-row items-center mb-12">
+          <div className="flex-shrink-0 flex items-center justify-center w-full md:w-64 bg-background">
+            <img
+              src="/pics/myjourney/medium1.png"
+              alt="How I Learnt React and Spring Boot in Less Than a Week While Under Time Pressure"
+              className="w-full h-auto rounded-l-2xl md:rounded-l-2xl md:rounded-r-none shadow-md"
+            />
+          </div>
+          <div className="flex-1 flex flex-col justify-center px-8 py-8 items-center md:items-start text-center md:text-left">
+            <h3 className="text-xl md:text-2xl font-bold mb-4">How I Learnt React and Spring Boot in Less Than a Week While Under Time Pressure</h3>
+            <a href="https://medium.com/@janiduamaraweera/how-i-learnt-react-and-spring-boot-in-less-than-a-week-while-under-time-pressure-dbf9245483ef" target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-2 rounded-full border-2 border-primary text-primary font-bold text-base shadow-sm hover:bg-primary hover:text-white transition-all duration-300 mt-2">
+              <svg className="w-5 h-5 text-primary group-hover:text-white" fill="currentColor" viewBox="0 0 1043.63 592.71"><g><path d="M588.67 296.14c0 163.61-131.93 296.14-294.33 296.14S0 459.75 0 296.14 131.93 0 294.34 0s294.33 132.53 294.33 296.14z"/><ellipse cx="775.66" cy="296.5" rx="168.49" ry="296.21"/><path d="M1043.63 296.14c0 163.61-75.45 296.14-168.49 296.14s-168.49-132.53-168.49-296.14S782.1 0 875.14 0s168.49 132.53 168.49 296.14z"/></g></svg>
+              Read Full Medium Post
+            </a>
+          </div>
         </div>
       </main>
       <Footer />
