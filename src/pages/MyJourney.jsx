@@ -206,6 +206,18 @@ export const MyJourney = () => {
                   <svg className="w-5 h-5 text-primary group-hover:text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/><path strokeLinecap="round" strokeLinejoin="round" d="M8 12l2 2 4-4" /></svg>
                   Photography Website
                 </a>
+                <button
+                  onClick={() => {
+                    const el = document.getElementById('through-my-lens');
+                    if (el) {
+                      el.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                  className="flex items-center gap-2 px-4 py-2 rounded-full border-2 border-primary text-primary font-bold text-base shadow-sm hover:bg-primary hover:text-white transition-all duration-300"
+                >
+                  <svg className="w-5 h-5 text-primary group-hover:text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 1 1-14 0 7 7 0 0 1 14 0z"/></svg>
+                  View My Photo Gallery
+                </button>
                 <a href="https://www.instagram.com/third_eye_of_janindu/" target="_blank" rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-2 rounded-full border-2 border-primary text-primary font-bold text-base shadow-sm hover:bg-primary hover:text-white transition-all duration-300 group">
                   <svg className="w-5 h-5 text-primary group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2A5.75 5.75 0 0 0 2 7.75v8.5A5.75 5.75 0 0 0 7.75 22h8.5A5.75 5.75 0 0 0 22 16.25v-8.5A5.75 5.75 0 0 0 16.25 2h-8.5zm0 1.5h8.5A4.25 4.25 0 0 1 20.5 7.75v8.5a4.25 4.25 0 0 1-4.25 4.25h-8.5A4.25 4.25 0 0 1 3.5 16.25v-8.5A4.25 4.25 0 0 1 7.75 3.5zm4.25 2.25a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5zm0 1.5a3.75 3.75 0 1 1 0 7.5 3.75 3.75 0 0 1 0-7.5zm5.25.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z" /></svg>
@@ -409,11 +421,41 @@ export const MyJourney = () => {
             Through My Lens
           </h2>
         </div>
-        <section className="mb-12">
+        <section className="mb-12" id="through-my-lens">
           <div className="text-center mb-8">
             <p className="text-lg md:text-xl text-muted-foreground mb-6">
               These are my captured moments, my personal gallery of photographs that tell stories through my unique perspective. Each image represents a moment in time that I found worth preserving, showcasing my journey as a photographer and my passion for visual storytelling.
             </p>
+          </div>
+          {/* --- Through My Lens Photo Gallery --- */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            {[
+              "janindu1.jpg","janindu2.jpg","janindu3.jpg","janindu4.jpg","janindu5.jpg",
+              "janindu6.jpg",
+              "janindu9.jpg","janindu10.jpg","janindu11.jpg","janindu12.jpg","janindu13.jpg","janindu14.jpg","janindu15.jpg","janindu19.jpg","janindu20.jpg","janindu21.jpg","janindu22.jpg","janindu23.jpg","janindu26.jpg","janindu27.jpg","janindu29.jpg","janindu30.jpg","janindu31.jpg","janindu32.jpg","janindu33.jpg","janindu34.jpg","janindu35.jpg","janindu36.jpg","janindu37.jpg","janindu38.JPG","janindu39.JPEG","janindu41.JPEG","janindu42.JPEG","janindu43.PNG","janindu44.JPEG","janindu44.PNG"
+            ].map((filename, idx) => (
+              <div
+                key={filename}
+                className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 transform bg-card animate-fade-in"
+                style={{ animationDelay: `${idx * 60}ms` }}
+              >
+                <img
+                  src={`/pics/myjourney/photograthy/${filename}`}
+                  alt={`Through My Lens Photo ${idx + 1}`}
+                  className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110 group-hover:brightness-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
+                  <div className="p-4 text-white">
+                    <h3 className="text-lg font-semibold mb-2">Photo #{idx + 1}</h3>
+                    <p className="text-sm opacity-90">Through My Lens</p>
+                  </div>
+                </div>
+                <div className="absolute top-4 right-4 bg-primary/90 text-white px-3 py-1 rounded-full text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-2 group-hover:translate-y-0">
+                  📷
+                </div>
+              </div>
+            ))}
           </div>
         </section>
         </main>
