@@ -221,6 +221,28 @@ export const MyJourney = () => {
           </div>
         </section>
         <section className="mb-12">
+          <div className="w-full max-w-7xl mx-auto bg-card/90 rounded-2xl shadow-xl border border-primary/30 p-0 md:p-0 overflow-hidden flex flex-col md:flex-row items-center">
+            <div className="flex-shrink-0 flex items-center justify-center w-full md:w-[28rem] bg-background">
+              <img
+                src="/pics/myjourney/cameralk.jpeg"
+                alt="CameraLK Photography Certificate"
+                className="w-full h-auto rounded-l-2xl md:rounded-l-2xl md:rounded-r-none shadow-md"
+              />
+            </div>
+            <div className="flex-1 flex flex-col justify-center px-8 py-8 items-center md:items-start text-center md:text-left">
+              <h3 className="text-xl md:text-2xl font-bold mb-4">Certificate in Photography from CameraLK</h3>
+              <p className="text-base md:text-lg mb-6">
+                I've had a strong passion for photography since my school days, which led me to complete a Certificate in Photography from CameraLK last year. I joined the course not only to improve my technical skills but also to connect with like-minded individuals and experienced professionals in the field. Since then, I've actively participated in various photography events and workshops organized by CameraLK and other renowned photography communities and professionals, allowing me to learn from senior photographers and build meaningful connections in the field.
+              </p>
+              <a href="https://www.linkedin.com/posts/janinduamaraweera_photography-cameralk-learningjourney-activity-7250177938933919744-ffTf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEGO24IBx5Lz1jGQ7om7lEJCTTcXvcA7OKw" target="_blank" rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-2 rounded-full border-2 border-primary text-primary font-bold text-base shadow-sm hover:bg-primary hover:text-white transition-all duration-300">
+                <svg className="w-5 h-5 text-primary group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                View Certificate Details on LinkedIn
+              </a>
+            </div>
+          </div>
+        </section>
+        <section className="mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
             <span className="text-primary">💡 Real-World Impact – GSMB ERP Project</span>
           </h2>
@@ -288,8 +310,11 @@ export const MyJourney = () => {
           </div>
         </section>
         <div className="text-center text-lg mt-8 text-muted-foreground">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
             <span className="text-primary">👇 Scroll down to view my full project portfolio, blog posts, and photography gallery.</span>
+          </h2>
+          <h2 className="text-xl md:text-2xl font-semibold mb-8 text-center text-muted-foreground">
+            My Medium Blog Posts
           </h2>
         </div>
         <div className="w-full max-w-4xl mx-auto bg-card/90 rounded-2xl shadow-xl border border-primary/30 p-0 md:p-0 overflow-hidden flex flex-col md:flex-row items-center mb-12">
@@ -326,8 +351,73 @@ export const MyJourney = () => {
             </a>
           </div>
         </div>
-      </main>
-      <Footer />
+        <div className="w-full max-w-4xl mx-auto bg-card/90 rounded-2xl shadow-xl border border-primary/30 p-0 md:p-0 overflow-hidden flex flex-col md:flex-row items-center mb-12">
+          <div className="flex-shrink-0 flex items-center justify-center w-full md:w-64 bg-background">
+            <img
+              src="/pics/myjourney/medium2.jpeg"
+              alt="Reflecting on an Inspiring Day at Google I/O Extended Sri Lanka!"
+              className="w-full h-auto rounded-l-2xl md:rounded-l-2xl md:rounded-r-none shadow-md"
+            />
+          </div>
+          <div className="flex-1 flex flex-col justify-center px-8 py-8 items-center md:items-start text-center md:text-left">
+            <h3 className="text-xl md:text-2xl font-bold mb-4">Reflecting on an Inspiring Day at Google I/O Extended Sri Lanka!</h3>
+            <a href="https://medium.com/@janiduamaraweera/reflecting-on-an-inspiring-day-at-google-i-o-extended-sri-lanka-cb45993eae4a" target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-2 rounded-full border-2 border-primary text-primary font-bold text-base shadow-sm hover:bg-primary hover:text-white transition-all duration-300 mt-2">
+              <svg className="w-5 h-5 text-primary group-hover:text-white" fill="currentColor" viewBox="0 0 1043.63 592.71"><g><path d="M588.67 296.14c0 163.61-131.93 296.14-294.33 296.14S0 459.75 0 296.14 131.93 0 294.34 0s294.33 132.53 294.33 296.14z"/><ellipse cx="775.66" cy="296.5" rx="168.49" ry="296.21"/><path d="M1043.63 296.14c0 163.61-75.45 296.14-168.49 296.14s-168.49-132.53-168.49-296.14S782.1 0 875.14 0s168.49 132.53 168.49 296.14z"/></g></svg>
+              Read Full Medium Post
+            </a>
+          </div>
+        </div>
+        <div className="text-center text-lg mt-8 text-muted-foreground">
+          <h2 className="text-xl md:text-2xl font-semibold mb-8 text-center text-muted-foreground">
+            Event Highlights & Workshop Memories
+          </h2>
+        </div>
+        <section className="mb-12">
+          <div className="text-center mb-8">
+            <p className="text-lg md:text-xl text-muted-foreground mb-6">
+              I've had the privilege of taking part in several photography events and workshops. These photos capture moments and memories from my journey through those incredible experiences.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((num) => (
+              <div
+                key={num}
+                className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 transform"
+              >
+                <img
+                  src={`/pics/myjourney/pho${num}.jpeg`}
+                  alt={`Photography Event ${num}`}
+                  className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
+                  <div className="p-4 text-white">
+                    <h3 className="text-lg font-semibold mb-2">Photography Event #{num}</h3>
+                    <p className="text-sm opacity-90">Capturing moments and stories</p>
+                  </div>
+                </div>
+                <div className="absolute top-4 right-4 bg-primary/90 text-white px-3 py-1 rounded-full text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-2 group-hover:translate-y-0">
+                  📸
+                </div>
+              </div>
+                        ))}
+          </div>
+        </section>
+        <div className="text-center text-lg mt-8 text-muted-foreground">
+          <h2 className="text-xl md:text-2xl font-semibold mb-8 text-center text-muted-foreground">
+            Through My Lens
+          </h2>
+        </div>
+        <section className="mb-12">
+          <div className="text-center mb-8">
+            <p className="text-lg md:text-xl text-muted-foreground mb-6">
+              These are my captured moments, my personal gallery of photographs that tell stories through my unique perspective. Each image represents a moment in time that I found worth preserving, showcasing my journey as a photographer and my passion for visual storytelling.
+            </p>
+          </div>
+        </section>
+        </main>
+        <Footer />
     </div>
   );
 }; 
